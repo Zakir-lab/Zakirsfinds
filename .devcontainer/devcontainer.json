@@ -1,0 +1,13 @@
+{
+  "name": "PyGPT cloud desktop",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "postCreateCommand": "bash .devcontainer/setup-pygpt.sh",
+  "postStartCommand": "bash .devcontainer/start-pygpt.sh",
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "PyGPT desktop",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
