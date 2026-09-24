@@ -16,7 +16,8 @@ fi
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   xvfb x11vnc fluxbox novnc websockify dbus-x11 xterm \
-  libgl1 libegl1 libxkbcommon-x11-0 libxcb-cursor0 libnss3 \
+  libgl1 libegl1 libxkbcommon-x11-0 libxcb-cursor0 \
+  libxcb-icccm4 libxcb-keysyms1 libxcb-shape0 libnss3 \
   libasound2 libatk-bridge2.0-0 libgbm1 libgtk-3-0 \
   fonts-dejavu-core
 
